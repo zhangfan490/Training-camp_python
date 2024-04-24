@@ -12,31 +12,28 @@
 4.定义一个start.py启动文件展示最终存款金额
 '''
 
+# 原有存款
 save_money = 1000
 
-#发工资模块
 
+# 定义发工资模块
 
 def send_money():
     send_money = 1000
     global save_money
-    print(f"发工资前，有存款{save_money}")
+    print(f"发工资前，有存款为{save_money}")
     save_money = save_money + send_money
 
-#工资查询模块
 
+# 定义查询模块
 
 def select_money():
     if save_money == 2000:
-        print(f"发工资后，现有存款{save_money}")
+        print(f"发工资啦，现有存款为{save_money}")
     else:
-        print(f"没有发工资，存款还是{save_money}")
-
+        print('没有发工资')
 
 
 if __name__ == '__main__':
     send_money()
     select_money()
-
-
-
