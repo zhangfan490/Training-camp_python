@@ -1,0 +1,16 @@
+cat : &cat
+  name : 加菲
+  color : 橘黄色
+  age : 2
+  gender : 母
+  hair : 短毛
+
+dog : &dog
+  name : 旺财
+  color : 黄色
+  age : 3
+  gender : 公
+  hair : 长毛
+
+default:
+  <<: *cat
